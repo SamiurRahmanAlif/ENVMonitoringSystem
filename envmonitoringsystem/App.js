@@ -206,75 +206,77 @@
 
 // login page 
 
-import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
+// import React, { useState } from 'react';
+// import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 
-export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+// export default function Login() {
+//   const [email, setEmail] = useState('');
+//   const [password, setPassword] = useState('');
 
-  const handleSignUp = () => {
-    console.log('Email:', email);
-    console.log('Password:', password);
-  };
+//   const handleSignUp = () => {
+//     console.log('Email:', email);
+//     console.log('Password:', password);
+//   };
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Sign In</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry={true}
-      />
-      <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-        <Text style={styles.buttonText}>Sign In</Text>
-      </TouchableOpacity>
-    </View>
-  );
-}
+//   return (
+//     <View style={styles.container}>
+//       <Text style={styles.title}>Sign In</Text>
+//       <TextInput
+//         style={styles.input}
+//         placeholder="Email"
+//         value={email}
+//         onChangeText={setEmail}
+//         keyboardType="email-address"
+//       />
+//       <TextInput
+//         style={styles.input}
+//         placeholder="Password"
+//         value={password}
+//         onChangeText={setPassword}
+//         secureTextEntry={true}
+//       />
+//       <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+//         <Text style={styles.buttonText}>Sign In</Text>
+//       </TouchableOpacity>
+//     </View>
+//   );
+// }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  input: {
-    width: '80%',
-    height: 50,
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 5,
-    paddingLeft: 10,
-    marginBottom: 10,
-  },
-  button: {
-    width: '25%',
-    height: 40,
-    backgroundColor: '#007bff',
-    borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 5,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#fff',
+//   },
+//   title: {
+//     fontSize: 24,
+//     fontWeight: 'bold',
+//     marginBottom: 20,
+//   },
+//   input: {
+//     width: '80%',
+//     height: 50,
+//     borderWidth: 1,
+//     borderColor: '#ccc',
+//     borderRadius: 5,
+//     paddingLeft: 10,
+//     marginBottom: 10,
+//   },
+//   button: {
+//     width: '25%',
+//     height: 40,
+//     backgroundColor: '#007bff',
+//     borderRadius: 5,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     borderRadius: 5,
+//   },
+//   buttonText: {
+//     color: '#fff',
+//     fontSize: 18,
+//     fontWeight: 'bold',
+//   },
+// });
+
+
