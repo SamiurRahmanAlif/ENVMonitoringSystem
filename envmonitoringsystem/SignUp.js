@@ -11,6 +11,9 @@ export default function SignUp ({ navigation }) {
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Password:', password);
+
+    //
+    navigation.navigate('SignIn');
   };
 
   return (

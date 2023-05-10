@@ -12,9 +12,14 @@ export default function SignIn  ({ navigation }) {
   const [password, setPassword] = useState("");
 
   const handleSignIn = () => {
-    console.log("Email:", email);
-    console.log("Password:", password);
+    console.log('Email:', email);
+    console.log('Password:', password);
+
+    // Perform sign-in logic here
+
+    navigation.navigate('Dashboard');
   };
+
 
   return (
     <View style={styles.container}>
@@ -33,7 +38,7 @@ export default function SignIn  ({ navigation }) {
         onChangeText={setPassword}
         secureTextEntry={true}
       />
-      <TouchableOpacity style={styles.button} onPress={(handleSignIn) => navigation.navigate('Dashboard')}>
+      <TouchableOpacity style={styles.button} onPress={handleSignIn} >
         <Text style={styles.buttonText}>Sign In</Text>
       </TouchableOpacity>
 
