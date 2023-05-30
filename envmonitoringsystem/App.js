@@ -1,3 +1,44 @@
+
+
+
+
+//code for navigation
+
+// Import necessary components and libraries
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+// Import the two screens to be navigated
+import ScreenOne from './ScreenOne';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
+import Dasbboard from './Dashboard';
+
+
+// Create a stack navigator object
+const Stack = createStackNavigator();
+
+// Define the navigator component
+const Navigator = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+      {/* <Stack.Screen name="ScreenOne" component={ScreenOne} /> */}
+        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="Dashboard" component={Dasbboard} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default Navigator;
+
+
+
+
+
 // text + icon view pages
 
 // import { StatusBar } from "expo-status-bar";
@@ -272,36 +313,3 @@
 // });
 
 
-
-//code for navigation
-
-// Import necessary components and libraries
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-
-// Import the two screens to be navigated
-import ScreenOne from './ScreenOne';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
-import Dasbboard from './Dashboard';
-
-
-// Create a stack navigator object
-const Stack = createStackNavigator();
-
-// Define the navigator component
-const Navigator = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-      {/* <Stack.Screen name="ScreenOne" component={ScreenOne} /> */}
-        <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="Dashboard" component={Dasbboard} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
-
-export default Navigator;
